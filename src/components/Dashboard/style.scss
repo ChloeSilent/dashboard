@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.dashboard {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(#D5E6F2, #FBC4CC);
+    padding: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+
+.dashboard__content {
+    max-width: 1024px;
+    border-radius: $primaryBorderRadius;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* .dashboard__content--light {
+    background: #fff;
+} */

@@ -1,0 +1,56 @@
+@import "../../variables.scss";
+
+.weather {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    width: 210px;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius:$primaryBorderRadius;
+    height: 200px;
+}
+
+.weather__icon {
+    width: 50%;
+}
+
+.weather__icon img {
+    width: 100%;
+}
+
+.weather__temp {
+    width: 50%;
+}
+
+.weather__temp p{
+    font-size: 40px;
+    color: #000000;
+    position: relative;
+    display: block;
+    max-width: 55px;
+}
+
+.weather__temp p::after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    width: 7px;
+    height: 6px;
+    border: 1.5px solid #000;
+    content: '';
+    border-radius: 50%;
+}
+
+.weather__city {
+    text-transform: uppercase;
+    color: #864AFC;
+    width: 50%;
+}
+
+.weather__description {
+    color: #000000;
+    width: 50%;
+}

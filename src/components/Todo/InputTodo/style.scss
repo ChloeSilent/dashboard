@@ -1,0 +1,32 @@
+@import "../../../variables.scss";
+
+.todo__input-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.todo__input {
+    border: none;
+    border-bottom: 1px solid #C4C4C4;
+    outline: none;
+    flex-grow: 2;
+    margin-right: 15px;
+    padding: 1px 5px;
+    margin-top: 6px;
+}
+
+.todo__label {
+    margin-right: 15px;
+}
+
+.todo__add-btn {
+    background-color: $lightThemeBackground;
+    border: 1px solid #4D85FF;
+    border-radius: $primaryBorderRadius;
+    height: 28px;
+    width: 60px;
+    color: #4D85FF
+}

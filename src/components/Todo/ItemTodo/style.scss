@@ -1,0 +1,65 @@
+@import "../../../variables.scss";
+
+.todo__item {
+    border: 1px solid #C4C4C4;
+    height: 30px;
+    border-radius: $primaryBorderRadius;
+    position: relative;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.todo__item--important {
+    border: 1px solid #FF3974;
+}
+
+.todo__item--done {
+    border: 1px solid #0CAF33;
+}
+
+.todo__item::after {
+    content: '';
+    width: 1px;
+    height: 105%;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-right: 5px solid #C4C4C4;
+    border-top-right-radius: $primaryBorderRadius;
+    border-bottom-right-radius: $primaryBorderRadius;
+}
+
+.todo__item--important::after {
+    border-right: 5px solid #FF3974;
+}
+
+.todo__item--done::after {
+    border-right: 5px solid #0CAF33;
+}
+
+.todo-tab:not(:last-child) {
+margin-right: 10px;
+}
+
+.todo-tab {
+    color: #C4C4C4;
+}
+
+.todo-tab--important:hover,
+.todo-tab--important:focus {
+    color: #FF3974;
+}
+
+.todo-tab--done:hover,
+.todo-tab--done:focus {
+    color: #0CAF33;
+}
+
+
+.todo-tab--delete:hover,
+.todo-tab--delete:focus {
+    color: #000000;
+}
