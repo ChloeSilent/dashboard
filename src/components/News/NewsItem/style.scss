@@ -1,0 +1,23 @@
+.news__item {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color:#FAF0FA;
+}
+
+.news__item-img {
+    width:200px;
+    height: auto;
+    max-height: 113px;
+    margin-right: 20px;
+}
+
+.news__item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news__item-additional {
+    color: #C4C4C4;
+}

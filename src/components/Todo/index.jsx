@@ -26,14 +26,10 @@ const Todo = () => {
     const updatedList = [...todos].filter((item) => {
       return item.id !== id
     })
-    //console.log('updatedList', updatedList)
-
     setTodos(updatedList)
   }
 
-  useEffect(() => {
-    console.log('update')
-  }, [todos])
+  useEffect(() => {}, [todos])
 
   const todosItems = todos.map((item) => {
     return (

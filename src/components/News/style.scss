@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.news {
+    background-color:#FAF0FA;
+    padding: 20px;
+    border-radius: $primaryBorderRadius;
+    width: calc(100% - 80px);
+    max-height: 113px;
+    margin: 0 auto;
+}
+
+.news__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news .slick-next {
+    right: -50px;
+}
+
+.news .slick-prev {
+    left: -50px;
+}
+
+.news .slick-slider {
+    max-height: 113px;
+}
